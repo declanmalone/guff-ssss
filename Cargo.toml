@@ -1,0 +1,27 @@
+[package]
+name = "guff-ssss"
+version = "0.1.0"
+edition = "2018"
+description = "Shamir's Secret Sharing Scheme"
+homepage = "https://github.com/declanmalone/guff-ssss"
+categories = ["mathematics"]
+keywords = ["Galois", "secret-sharing", "maths"]
+license = "GPL-2.0-or-later OR LGPL-2.0-or-later"
+authors = ["Declan Malone <idablack@users.sourceforge.net>"]
+
+# Use criterion for benchmarking all sorts of things
+[dev-dependencies]
+criterion = "0.3"
+
+[[bench]]
+name = "bench"
+harness = false
+
+[profile.release]
+debug = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+guff = "0.1.7"
+
