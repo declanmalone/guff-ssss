@@ -24,4 +24,6 @@ debug = true
 
 [dependencies]
 guff = "0.1.7"
+"clap" = "2.33.0"
+"hex" = "0.3.1"
 
